@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/node_modules/bootstrap/compiler/bootstrap.css">
+
+  <link rel="stylesheet" href="/node_modules/bootstrap/compiler/style.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+  </style>
+
+  <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+  
+  <div id="jogo" class="container text-center mt-3">
+    <h1 class="text-center mb-3">Tic-Tac-Toe</h1>
+    <p class="text-center mt-3 mb-4">O jogo da velha ou três em linha é um jogo e/ou passatempo popular. É um jogo de
+      regras extremamente simples, que não traz grandes dificuldades para seus jogadores e é facilmente aprendido.</p>
+
+    <div class="container">
+      <table>
+        <tr class="cima">
+          <td id="pos0" class="esquerda" onclick="jogar(0)">⠀</td>
+          <td id="pos1" onclick="jogar(1)">⠀</td>
+          <td id="pos2" class="direita" onclick="jogar(2)">⠀</td>
+        </tr>
+        <tr>
+          <td id="pos3" class="esquerda" onclick="jogar(3)">⠀</td>
+          <td id="pos4" onclick="jogar(4)">⠀</td>
+          <td id="pos5" class="direita" onclick="jogar(5)">⠀</td>
+        </tr>
+        <tr class="baixo">
+          <td id="pos6" class="esquerda" onclick="jogar(6)">⠀</td>
+          <td id="pos7" onclick="jogar(7)">⠀</td>
+          <td id="pos8" class="direita" onclick="jogar(8)">⠀</td>
+        </tr>
+      </table>
+    </div>
+
+
+  </div>
+
+  <div id="res" class="text-center m-auto mt-5 p-4">
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="/node_modules/jquery/dist/jquery.js"></script>
+  <script src="/node_modules/popper.js/dist/popper.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/node_modules/bootstrap/js/dist/game.js"></script>
+</body>
+
+</html>
